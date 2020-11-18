@@ -1,0 +1,40 @@
+@import '../main/variables';
+
+.nav {
+  color: $blue-two;
+
+  &:focus:before, &:hover:before {
+    color: $blue-one;
+    text-decoration: none;
+  }
+}
+
+div.border a:before, div.border a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: $blue-one;
+    content: "";
+    opacity: 0;
+    transition: $transition-default;
+}
+
+div.border a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.border a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.border a:hover:before, div.border a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}

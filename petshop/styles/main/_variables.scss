@@ -1,0 +1,24 @@
+
+
+/*---- colors ----*/
+$blue-one: #083B66;
+$blue-two: #4c96d7;
+$orange-one: #663308;
+$orange-two:	#d78d4c;
+$green-one: #3b6608;
+$green-two: #086662;
+$green-three: #96d74c;
+$red-one: #66083b;
+$red-two: #d74c96;
+
+/*---- fonts ----*/
+@font-face {
+  font-family: 'Chinacat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Chinacat'), url(/assets/fonts/chinacat/chinrg__.ttf) format('woff2');
+}
+
+/*---- transition ----*/
+$transition-default: all 0.3s;

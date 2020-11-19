@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Navigation } from "../navigation/navigation"
+import { Navigation } from "../components/navigation/navigation"
+import { Hero } from '../components/hero/hero'
 
 export default function Home() {
   return (
-    <Navigation />
+    <div>
+      <Navigation />
+      <Hero />
+    </div>
   )
 }
